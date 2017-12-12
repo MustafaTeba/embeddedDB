@@ -23,7 +23,6 @@ public class JpaController {
 	@RequestMapping(path = "/repo/{value}", method = RequestMethod.GET)
 	public void saveByRepo(@PathVariable String value) {
 		Model model = new Model();
-		model.setId(System.currentTimeMillis());
 		model.setValue(value);
 		modelJpaRepository.save(model);
 	}

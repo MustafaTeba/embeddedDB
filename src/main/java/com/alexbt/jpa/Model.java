@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Model {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ID", nullable = false)
 	private long id;
 	
